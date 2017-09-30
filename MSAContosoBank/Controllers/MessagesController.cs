@@ -18,7 +18,7 @@ namespace MSAContosoBank
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.RootDialog());
+                await Conversation.SendAsync(activity, () => new Dialogs.Luis_Dialog());
             }
             else
             {
